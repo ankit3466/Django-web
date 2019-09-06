@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Entries in Database are :</h1>
+<h2>--------------------------------------------------------</h2>
+{% for post in data %}
+  <h2>name : {{ post.name }}</h2>
+  <h4>email : {{ post.email }}</h4>
+  <h4>course : {{ post.course }}</h4>
+  <h4>year : {{ post.year }}</h4>
+  <h4>phone : {{ post.phone }}</h4>
+  <h4>collage : {{ post.collage }}</h4>
+<h2>--------------------------------------------------------</h2>
+{% endfor %}
+</body>
+</html>
