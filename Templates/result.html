@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if not data %}
+  <h1>No Records Found!!!!! </h1>
+{% endif %}
+{% for dat in data %}
+  <h1>name : {{ dat.name }}</h1>
+  <h3>email : {{ dat.email }}</h3>
+  <h3>course : {{ dat.course }}</h3>
+  <h3>year : {{ dat.year }}</h3>
+  <h3>phone : {{ dat.phone }}</h3>
+  <h3>collage : {{ dat.collage }}</h3>
+{% endfor %}
+
+</body>
+</html>
